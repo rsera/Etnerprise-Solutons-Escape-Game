@@ -1,6 +1,8 @@
 /*  I always forget how to compile and run my code
     so here's a note to self:
+    To compile:
     gcc badcode.c
+    To run:
     a.exe
 */
 
