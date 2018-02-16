@@ -7,22 +7,33 @@
 */
 
 #include "badcode.h"
-//#include <badcode.h>
 #include <stdlib.h>
 
 #define FALSE 1
 
 typedef struct aStruct{
-    int num;
+    int data;
     int* ptr;
 }aStruct;
 
 int main(void)
 {
-    aStruct *s = malloc(sizeof(aStruct));
-    int *p;
-    int x;
-    //*p = x;
+    int i; // error: i undeclared
+    int num = 10;
+    int sum = 0;
+
+    aStruct myStruct;
+    myStruct.data = 27;
+
+    for (i=0; i<num; i++)
+    {
+        sum += num;
+    }
+
+    if (FALSE)
+    {
+        num = 100;
+    }
 
     char *title = "CTo";
     // oh wait, I didn't capitalize the O
