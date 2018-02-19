@@ -17,21 +17,22 @@
 typedef struct aStruct{
     int data;
     int* ptr;
-}aStruct
+}aStruct;
 
 int main(void)
 {
-    int fizz=0, buzz, fizzbuzz=0;
+    int i;
+    int fizz=0, buzz=0, fizzbuzz=0;
     char *title = malloc(sizeof(char)*4);
 
-    title = "CTo";
+    strcpy(title,"CTo");
     // oh wait, I didn't capitalize the O
     title[2] = 'O';
     printf("%s, remember:\n", title);
 
     // loops through an array
     // I've hidden the array in a header file to keep it safe from spies
-    for(i=0; i<=SIZE_OF_SECRET_NUMBERS; i++);
+    for(i=0; i<SIZE_OF_SECRET_NUMBERS; i++)
     {
         if(secretNumbers[i]%5==0 && secretNumbers[i]%9==0)
             fizzbuzz++;

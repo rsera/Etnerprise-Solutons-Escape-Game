@@ -17,21 +17,22 @@
 typedef struct aStruct{
     int data;
     int* ptr;
-}aStruct
+}aStruct;//no semicolon
 
 int main(void)
 {
-    int fizz=0, buzz, fizzbuzz=0;
+    int i; //don't declare i
+    int fizz=0, buzz=0, fizzbuzz=0;//don't init a var to 0
     char *title = malloc(sizeof(char)*4);
 
-    title = "CTo";
+    //title = "CTo"; //string lit instead of strcpy
     // oh wait, I didn't capitalize the O
     title[2] = 'O';
     printf("%s, remember:\n", title);
 
     // loops through an array
     // I've hidden the array in a header file to keep it safe from spies
-    for(i=0; i<=SIZE_OF_SECRET_NUMBERS; i++);
+    for(i=0; i<SIZE_OF_SECRET_NUMBERS; i++) //<= instead of <, and semicolon at end of for loop
     {
         if(secretNumbers[i]%5==0 && secretNumbers[i]%9==0)
             fizzbuzz++;
